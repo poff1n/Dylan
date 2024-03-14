@@ -6,7 +6,7 @@ const compassCircle = document.querySelector(".compass-circle");
       navigator.userAgent.match(/AppleWebKit/);
 
     function init() {
-      startBtn.addEventListener("click", startCompass);
+      startCompass();
       navigator.geolocation.getCurrentPosition(locationHandler);
 
       if (!isIOS) {

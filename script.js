@@ -30,7 +30,7 @@ const compassCircle = document.querySelector(".compass-circle");
 
     function handler(e) {
       compass = e.webkitCompassHeading || Math.abs(e.alpha - 360);
-      compassCircle.style.transform = `translate(-50%, -50%) rotate(${-compass+pointDegree}deg)`;
+      compassCircle.style.transform = `translate(-50%, -50%) rotate(${compass-pointDegree}deg)`;
 
       // ±15 degree
       if (
